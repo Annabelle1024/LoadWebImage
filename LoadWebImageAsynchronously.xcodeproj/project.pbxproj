@@ -13,6 +13,19 @@
 		1332C7491CF9BC2B00624C66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1332C7471CF9BC2B00624C66 /* Main.storyboard */; };
 		1332C74B1CF9BC2B00624C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1332C74A1CF9BC2B00624C66 /* Assets.xcassets */; };
 		1332C74E1CF9BC2B00624C66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1332C74C1CF9BC2B00624C66 /* LaunchScreen.storyboard */; };
+		1332C7731CF9BD3100624C66 /* NSArray+YJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C7591CF9BD3100624C66 /* NSArray+YJAddition.m */; };
+		1332C7741CF9BD3100624C66 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C75B1CF9BD3100624C66 /* NSArray+Log.m */; };
+		1332C7751CF9BD3100624C66 /* NSAttributedString+YJAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C75D1CF9BD3100624C66 /* NSAttributedString+YJAdditon.m */; };
+		1332C7761CF9BD3100624C66 /* NSObject+YJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C75F1CF9BD3100624C66 /* NSObject+YJAddition.m */; };
+		1332C7771CF9BD3100624C66 /* UIButton+YJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C7611CF9BD3100624C66 /* UIButton+YJAddition.m */; };
+		1332C7781CF9BD3100624C66 /* UIColor+YJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C7631CF9BD3100624C66 /* UIColor+YJAddition.m */; };
+		1332C7791CF9BD3100624C66 /* UILabel+YJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C7651CF9BD3100624C66 /* UILabel+YJAddition.m */; };
+		1332C77A1CF9BD3100624C66 /* UIScreen+YJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C7671CF9BD3100624C66 /* UIScreen+YJAddition.m */; };
+		1332C77B1CF9BD3100624C66 /* UIView+YJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C7691CF9BD3100624C66 /* UIView+YJAddition.m */; };
+		1332C77C1CF9BD3100624C66 /* UIViewController+YJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C76B1CF9BD3100624C66 /* UIViewController+YJAddition.m */; };
+		1332C77D1CF9BD3100624C66 /* YJBaseControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C76E1CF9BD3100624C66 /* YJBaseControl.m */; };
+		1332C77E1CF9BD3100624C66 /* YJBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C7701CF9BD3100624C66 /* YJBaseView.m */; };
+		1332C77F1CF9BD3100624C66 /* YJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C7721CF9BD3100624C66 /* YJBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +39,33 @@
 		1332C74A1CF9BC2B00624C66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1332C74D1CF9BC2B00624C66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1332C74F1CF9BC2B00624C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1332C7571CF9BD3100624C66 /* YJAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJAdditions.h; sourceTree = "<group>"; };
+		1332C7581CF9BD3100624C66 /* NSArray+YJAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YJAddition.h"; sourceTree = "<group>"; };
+		1332C7591CF9BD3100624C66 /* NSArray+YJAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YJAddition.m"; sourceTree = "<group>"; };
+		1332C75A1CF9BD3100624C66 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		1332C75B1CF9BD3100624C66 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		1332C75C1CF9BD3100624C66 /* NSAttributedString+YJAdditon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+YJAdditon.h"; sourceTree = "<group>"; };
+		1332C75D1CF9BD3100624C66 /* NSAttributedString+YJAdditon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+YJAdditon.m"; sourceTree = "<group>"; };
+		1332C75E1CF9BD3100624C66 /* NSObject+YJAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YJAddition.h"; sourceTree = "<group>"; };
+		1332C75F1CF9BD3100624C66 /* NSObject+YJAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YJAddition.m"; sourceTree = "<group>"; };
+		1332C7601CF9BD3100624C66 /* UIButton+YJAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+YJAddition.h"; sourceTree = "<group>"; };
+		1332C7611CF9BD3100624C66 /* UIButton+YJAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YJAddition.m"; sourceTree = "<group>"; };
+		1332C7621CF9BD3100624C66 /* UIColor+YJAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YJAddition.h"; sourceTree = "<group>"; };
+		1332C7631CF9BD3100624C66 /* UIColor+YJAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YJAddition.m"; sourceTree = "<group>"; };
+		1332C7641CF9BD3100624C66 /* UILabel+YJAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+YJAddition.h"; sourceTree = "<group>"; };
+		1332C7651CF9BD3100624C66 /* UILabel+YJAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+YJAddition.m"; sourceTree = "<group>"; };
+		1332C7661CF9BD3100624C66 /* UIScreen+YJAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+YJAddition.h"; sourceTree = "<group>"; };
+		1332C7671CF9BD3100624C66 /* UIScreen+YJAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+YJAddition.m"; sourceTree = "<group>"; };
+		1332C7681CF9BD3100624C66 /* UIView+YJAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YJAddition.h"; sourceTree = "<group>"; };
+		1332C7691CF9BD3100624C66 /* UIView+YJAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YJAddition.m"; sourceTree = "<group>"; };
+		1332C76A1CF9BD3100624C66 /* UIViewController+YJAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YJAddition.h"; sourceTree = "<group>"; };
+		1332C76B1CF9BD3100624C66 /* UIViewController+YJAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YJAddition.m"; sourceTree = "<group>"; };
+		1332C76D1CF9BD3100624C66 /* YJBaseControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBaseControl.h; sourceTree = "<group>"; };
+		1332C76E1CF9BD3100624C66 /* YJBaseControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJBaseControl.m; sourceTree = "<group>"; };
+		1332C76F1CF9BD3100624C66 /* YJBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBaseView.h; sourceTree = "<group>"; };
+		1332C7701CF9BD3100624C66 /* YJBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJBaseView.m; sourceTree = "<group>"; };
+		1332C7711CF9BD3100624C66 /* YJBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBaseViewController.h; sourceTree = "<group>"; };
+		1332C7721CF9BD3100624C66 /* YJBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +98,12 @@
 		1332C73D1CF9BC2B00624C66 /* LoadWebImageAsynchronously */ = {
 			isa = PBXGroup;
 			children = (
+				1332C7551CF9BD3100624C66 /* Tools */,
 				1332C7411CF9BC2B00624C66 /* AppDelegate.h */,
 				1332C7421CF9BC2B00624C66 /* AppDelegate.m */,
 				1332C7441CF9BC2B00624C66 /* ViewController.h */,
 				1332C7451CF9BC2B00624C66 /* ViewController.m */,
 				1332C7471CF9BC2B00624C66 /* Main.storyboard */,
-				1332C74A1CF9BC2B00624C66 /* Assets.xcassets */,
-				1332C74C1CF9BC2B00624C66 /* LaunchScreen.storyboard */,
-				1332C74F1CF9BC2B00624C66 /* Info.plist */,
 				1332C73E1CF9BC2B00624C66 /* Supporting Files */,
 			);
 			path = LoadWebImageAsynchronously;
@@ -74,9 +112,62 @@
 		1332C73E1CF9BC2B00624C66 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1332C74A1CF9BC2B00624C66 /* Assets.xcassets */,
+				1332C74C1CF9BC2B00624C66 /* LaunchScreen.storyboard */,
+				1332C74F1CF9BC2B00624C66 /* Info.plist */,
 				1332C73F1CF9BC2B00624C66 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1332C7551CF9BD3100624C66 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				1332C7561CF9BD3100624C66 /* Additions */,
+				1332C76C1CF9BD3100624C66 /* Base */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		1332C7561CF9BD3100624C66 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				1332C7571CF9BD3100624C66 /* YJAdditions.h */,
+				1332C7581CF9BD3100624C66 /* NSArray+YJAddition.h */,
+				1332C7591CF9BD3100624C66 /* NSArray+YJAddition.m */,
+				1332C75A1CF9BD3100624C66 /* NSArray+Log.h */,
+				1332C75B1CF9BD3100624C66 /* NSArray+Log.m */,
+				1332C75C1CF9BD3100624C66 /* NSAttributedString+YJAdditon.h */,
+				1332C75D1CF9BD3100624C66 /* NSAttributedString+YJAdditon.m */,
+				1332C75E1CF9BD3100624C66 /* NSObject+YJAddition.h */,
+				1332C75F1CF9BD3100624C66 /* NSObject+YJAddition.m */,
+				1332C7601CF9BD3100624C66 /* UIButton+YJAddition.h */,
+				1332C7611CF9BD3100624C66 /* UIButton+YJAddition.m */,
+				1332C7621CF9BD3100624C66 /* UIColor+YJAddition.h */,
+				1332C7631CF9BD3100624C66 /* UIColor+YJAddition.m */,
+				1332C7641CF9BD3100624C66 /* UILabel+YJAddition.h */,
+				1332C7651CF9BD3100624C66 /* UILabel+YJAddition.m */,
+				1332C7661CF9BD3100624C66 /* UIScreen+YJAddition.h */,
+				1332C7671CF9BD3100624C66 /* UIScreen+YJAddition.m */,
+				1332C7681CF9BD3100624C66 /* UIView+YJAddition.h */,
+				1332C7691CF9BD3100624C66 /* UIView+YJAddition.m */,
+				1332C76A1CF9BD3100624C66 /* UIViewController+YJAddition.h */,
+				1332C76B1CF9BD3100624C66 /* UIViewController+YJAddition.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		1332C76C1CF9BD3100624C66 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1332C76D1CF9BD3100624C66 /* YJBaseControl.h */,
+				1332C76E1CF9BD3100624C66 /* YJBaseControl.m */,
+				1332C76F1CF9BD3100624C66 /* YJBaseView.h */,
+				1332C7701CF9BD3100624C66 /* YJBaseView.m */,
+				1332C7711CF9BD3100624C66 /* YJBaseViewController.h */,
+				1332C7721CF9BD3100624C66 /* YJBaseViewController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +196,7 @@
 		1332C7331CF9BC2B00624C66 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YJ;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = annabelle;
 				TargetAttributes = {
@@ -150,9 +242,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1332C77C1CF9BD3100624C66 /* UIViewController+YJAddition.m in Sources */,
+				1332C7741CF9BD3100624C66 /* NSArray+Log.m in Sources */,
 				1332C7461CF9BC2B00624C66 /* ViewController.m in Sources */,
+				1332C77D1CF9BD3100624C66 /* YJBaseControl.m in Sources */,
+				1332C77A1CF9BD3100624C66 /* UIScreen+YJAddition.m in Sources */,
+				1332C77B1CF9BD3100624C66 /* UIView+YJAddition.m in Sources */,
+				1332C7751CF9BD3100624C66 /* NSAttributedString+YJAdditon.m in Sources */,
 				1332C7431CF9BC2B00624C66 /* AppDelegate.m in Sources */,
+				1332C77F1CF9BD3100624C66 /* YJBaseViewController.m in Sources */,
+				1332C7761CF9BD3100624C66 /* NSObject+YJAddition.m in Sources */,
 				1332C7401CF9BC2B00624C66 /* main.m in Sources */,
+				1332C77E1CF9BD3100624C66 /* YJBaseView.m in Sources */,
+				1332C7771CF9BD3100624C66 /* UIButton+YJAddition.m in Sources */,
+				1332C7791CF9BD3100624C66 /* UILabel+YJAddition.m in Sources */,
+				1332C7731CF9BD3100624C66 /* NSArray+YJAddition.m in Sources */,
+				1332C7781CF9BD3100624C66 /* UIColor+YJAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LoadWebImageAsynchronously/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = heima.LoadWebImageAsynchronously;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LoadWebImageAsynchronously/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = heima.LoadWebImageAsynchronously;
 				PRODUCT_NAME = "$(TARGET_NAME)";
