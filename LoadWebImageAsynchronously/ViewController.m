@@ -11,7 +11,6 @@
 #import "YJAppInfoModel.h"
 #import "YJAppInfoCell.h"
 
-#import "UIImageView+WebCache.h"
 
 static NSString *cellId = @"cellId";
 
@@ -26,6 +25,11 @@ static NSString *cellId = @"cellId";
  *  表格视图
  */
 @property (nonatomic, strong) UITableView *tableView;
+
+/*!
+ *  下载列队
+ */
+@property (nonatomic, strong) NSOperationQueue *downloadQueue;
 
 @end
 
@@ -54,6 +58,9 @@ static NSString *cellId = @"cellId";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // 实例化下载列队
+    _downloadQueue = [[NSOperationQueue alloc] init];
     
     [self loadData];
 }
@@ -125,8 +132,29 @@ static NSString *cellId = @"cellId";
     
     // sdwebimage 异步设置图像
     NSURL *url = [NSURL URLWithString:model.icon];
-    [cell.iconView sd_setImageWithURL:url];
-
+    
+    // 异步加载图像
+    // 1> 创建下载操作
+    NSBlockOperation *op = [NSBlockOperation blockOperationWithBlock:^{
+        
+        // a> 根据 url 加载二进制数据
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        
+        // b> 将二进制数据转换成 image
+        UIImage *image = [UIImage imageWithData:data];
+        
+        // c> 主线程更新 UI
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            
+            cell.iconView.image = image;
+            
+        }];
+        
+    }];
+    
+    // 将图像添加到队列
+    [_downloadQueue addOperation:op];
+    
     
     return cell;
     
