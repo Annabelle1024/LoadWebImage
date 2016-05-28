@@ -10,6 +10,8 @@
 #import "AFNetworking.h"
 #import "YJAppInfoModel.h"
 
+#import "UIImageView+WebCache.h"
+
 static NSString *cellId = @"cellId";
 
 @interface ViewController () <UITableViewDataSource>
@@ -88,6 +90,8 @@ static NSString *cellId = @"cellId";
                 self.appInfoList = arrayM;
                 
                 // 刷新表格数据
+                // 因为是异步加载的数据，表格的数据源方法已经执行过！
+                // 加载完成数据之后，需要刷新表格数据，重新执行数据源方法
                 [self.tableView reloadData];
     
             }
@@ -113,6 +117,11 @@ static NSString *cellId = @"cellId";
     YJAppInfoModel *model = _appInfoList[indexPath.row];
     
     cell.textLabel.text = model.name;
+    
+    // sdwebimage 异步设置图像
+    NSURL *url = [NSURL URLWithString:model.icon];
+    [cell.imageView sd_setImageWithURL:url];
+
     
     return cell;
     
