@@ -130,11 +130,22 @@ static NSString *cellId = @"cellId";
     cell.nameLabel.text = model.name;
     cell.downloadLabel.text = model.download;
     
+    // 判断模型中是否有 image 属性, 如果有, 直接返回该image, 如果没有, 启用占位图像
+    if (model.image != nil) {
+        
+        NSLog(@"此时返回的是内存缓存的图片");
+        
+        cell.iconView.image = model.image;
+        
+        return cell;
+        
+    }
+    
     // 增加占位图像
     UIImage *placeholderImage = [UIImage imageNamed:@"user_default"];
     cell.iconView.image = placeholderImage;
     
-    // sdwebimage 异步设置图像
+    // 异步设置图像
     NSURL *url = [NSURL URLWithString:model.icon];
     
     // 异步加载图像
@@ -149,6 +160,9 @@ static NSString *cellId = @"cellId";
         
         // b> 将二进制数据转换成 image
         UIImage *image = [UIImage imageWithData:data];
+        
+        // *** 记录图像属性
+        model.image = image;
         
         // c> 主线程更新 UI
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
