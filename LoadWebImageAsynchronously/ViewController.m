@@ -10,7 +10,9 @@
 #import "AFNetworking.h"
 #import "YJAppInfoModel.h"
 
-@interface ViewController ()
+static NSString *cellId = @"cellId";
+
+@interface ViewController () <UITableViewDataSource>
 
 /*!
  *  应用程序信息列表数组
@@ -28,6 +30,18 @@
 
 // 根视图设置为 tableView
 - (void)loadView {
+    
+    _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    
+    _tableView.rowHeight = 100;
+    
+    // 注册原型cell
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellId];
+    
+    // 设置数据源
+    _tableView.dataSource = self;
+    
+    self.view = _tableView;
     
     
 }
@@ -72,6 +86,9 @@
                 
                 // 使用属性记录
                 self.appInfoList = arrayM;
+                
+                // 刷新表格数据
+                [self.tableView reloadData];
     
             }
             failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -79,8 +96,27 @@
                 NSLog(@"请求失败: %@", error);
     
             }];
+   
+}
+
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
+    return _appInfoList.count;
     
 }
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+    
+    YJAppInfoModel *model = _appInfoList[indexPath.row];
+    
+    cell.textLabel.text = model.name;
+    
+    return cell;
+    
+}
+
 
 @end
