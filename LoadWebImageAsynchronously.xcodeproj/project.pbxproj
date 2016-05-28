@@ -48,6 +48,7 @@
 		1332C7C41CF9C55000624C66 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C7AC1CF9C55000624C66 /* UIImageView+HighlightedWebCache.m */; };
 		1332C7C51CF9C55000624C66 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C7AE1CF9C55000624C66 /* UIImageView+WebCache.m */; };
 		1332C7C61CF9C55000624C66 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C7B01CF9C55000624C66 /* UIView+WebCacheOperation.m */; };
+		1332C7C91CF9C7DE00624C66 /* YJAppInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C7C81CF9C7DE00624C66 /* YJAppInfoModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,6 +135,8 @@
 		1332C7AE1CF9C55000624C66 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		1332C7AF1CF9C55000624C66 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		1332C7B01CF9C55000624C66 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		1332C7C71CF9C7DE00624C66 /* YJAppInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJAppInfoModel.h; sourceTree = "<group>"; };
+		1332C7C81CF9C7DE00624C66 /* YJAppInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJAppInfoModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,8 @@
 				1332C7421CF9BC2B00624C66 /* AppDelegate.m */,
 				1332C7441CF9BC2B00624C66 /* ViewController.h */,
 				1332C7451CF9BC2B00624C66 /* ViewController.m */,
+				1332C7C71CF9C7DE00624C66 /* YJAppInfoModel.h */,
+				1332C7C81CF9C7DE00624C66 /* YJAppInfoModel.m */,
 				1332C7471CF9BC2B00624C66 /* Main.storyboard */,
 				1332C73E1CF9BC2B00624C66 /* Supporting Files */,
 			);
@@ -392,6 +397,7 @@
 				1332C7751CF9BD3100624C66 /* NSAttributedString+YJAdditon.m in Sources */,
 				1332C7BB1CF9C55000624C66 /* SDWebImageDecoder.m in Sources */,
 				1332C7B41CF9C55000624C66 /* AFURLRequestSerialization.m in Sources */,
+				1332C7C91CF9C7DE00624C66 /* YJAppInfoModel.m in Sources */,
 				1332C7C51CF9C55000624C66 /* UIImageView+WebCache.m in Sources */,
 				1332C7431CF9BC2B00624C66 /* AppDelegate.m in Sources */,
 				1332C7B31CF9C55000624C66 /* AFSecurityPolicy.m in Sources */,
