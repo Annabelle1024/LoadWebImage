@@ -130,12 +130,19 @@ static NSString *cellId = @"cellId";
     cell.nameLabel.text = model.name;
     cell.downloadLabel.text = model.download;
     
+    // 增加占位图像
+    UIImage *placeholderImage = [UIImage imageNamed:@"user_default"];
+    cell.iconView.image = placeholderImage;
+    
     // sdwebimage 异步设置图像
     NSURL *url = [NSURL URLWithString:model.icon];
     
     // 异步加载图像
     // 1> 创建下载操作
     NSBlockOperation *op = [NSBlockOperation blockOperationWithBlock:^{
+        
+        // **** 模拟延时, 让占位图像发挥作用
+        [NSThread sleepForTimeInterval:1.0];
         
         // a> 根据 url 加载二进制数据
         NSData *data = [NSData dataWithContentsOfURL:url];
