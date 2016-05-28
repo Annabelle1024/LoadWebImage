@@ -49,6 +49,8 @@
 		1332C7C51CF9C55000624C66 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C7AE1CF9C55000624C66 /* UIImageView+WebCache.m */; };
 		1332C7C61CF9C55000624C66 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C7B01CF9C55000624C66 /* UIView+WebCacheOperation.m */; };
 		1332C7C91CF9C7DE00624C66 /* YJAppInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C7C81CF9C7DE00624C66 /* YJAppInfoModel.m */; };
+		1332C7CE1CF9E52A00624C66 /* YJAppInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1332C7CC1CF9E52A00624C66 /* YJAppInfoCell.m */; };
+		1332C7CF1CF9E52A00624C66 /* YJAppInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1332C7CD1CF9E52A00624C66 /* YJAppInfoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,6 +139,9 @@
 		1332C7B01CF9C55000624C66 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		1332C7C71CF9C7DE00624C66 /* YJAppInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJAppInfoModel.h; sourceTree = "<group>"; };
 		1332C7C81CF9C7DE00624C66 /* YJAppInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJAppInfoModel.m; sourceTree = "<group>"; };
+		1332C7CB1CF9E52A00624C66 /* YJAppInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJAppInfoCell.h; sourceTree = "<group>"; };
+		1332C7CC1CF9E52A00624C66 /* YJAppInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJAppInfoCell.m; sourceTree = "<group>"; };
+		1332C7CD1CF9E52A00624C66 /* YJAppInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YJAppInfoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,8 +180,10 @@
 				1332C7421CF9BC2B00624C66 /* AppDelegate.m */,
 				1332C7441CF9BC2B00624C66 /* ViewController.h */,
 				1332C7451CF9BC2B00624C66 /* ViewController.m */,
-				1332C7C71CF9C7DE00624C66 /* YJAppInfoModel.h */,
-				1332C7C81CF9C7DE00624C66 /* YJAppInfoModel.m */,
+				1332C7CB1CF9E52A00624C66 /* YJAppInfoCell.h */,
+				1332C7CC1CF9E52A00624C66 /* YJAppInfoCell.m */,
+				1332C7CD1CF9E52A00624C66 /* YJAppInfoCell.xib */,
+				1332C7CA1CF9E4E300624C66 /* Model */,
 				1332C7471CF9BC2B00624C66 /* Main.storyboard */,
 				1332C73E1CF9BC2B00624C66 /* Supporting Files */,
 			);
@@ -313,6 +320,15 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		1332C7CA1CF9E4E300624C66 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1332C7C71CF9C7DE00624C66 /* YJAppInfoModel.h */,
+				1332C7C81CF9C7DE00624C66 /* YJAppInfoModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -374,6 +390,7 @@
 			files = (
 				1332C74E1CF9BC2B00624C66 /* LaunchScreen.storyboard in Resources */,
 				1332C74B1CF9BC2B00624C66 /* Assets.xcassets in Resources */,
+				1332C7CF1CF9E52A00624C66 /* YJAppInfoCell.xib in Resources */,
 				1332C7491CF9BC2B00624C66 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +428,7 @@
 				1332C77E1CF9BD3100624C66 /* YJBaseView.m in Sources */,
 				1332C7B61CF9C55000624C66 /* AFURLSessionManager.m in Sources */,
 				1332C7C61CF9C55000624C66 /* UIView+WebCacheOperation.m in Sources */,
+				1332C7CE1CF9E52A00624C66 /* YJAppInfoCell.m in Sources */,
 				1332C7BA1CF9C55000624C66 /* SDWebImageCompat.m in Sources */,
 				1332C7771CF9BD3100624C66 /* UIButton+YJAddition.m in Sources */,
 				1332C7B71CF9C55000624C66 /* MKAnnotationView+WebCache.m in Sources */,
