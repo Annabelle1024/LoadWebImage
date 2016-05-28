@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "AFNetworking.h"
 #import "YJAppInfoModel.h"
+#import "YJAppInfoCell.h"
 
 #import "UIImageView+WebCache.h"
 
@@ -38,7 +39,10 @@ static NSString *cellId = @"cellId";
     _tableView.rowHeight = 100;
     
     // 注册原型cell
-    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellId];
+//    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellId];
+    
+    // 用xib注册原型cell
+    [_tableView registerNib:[UINib nibWithNibName:@"YJAppInfoCell" bundle:nil] forCellReuseIdentifier:cellId];
     
     // 设置数据源
     _tableView.dataSource = self;
@@ -112,15 +116,16 @@ static NSString *cellId = @"cellId";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+    YJAppInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
     
     YJAppInfoModel *model = _appInfoList[indexPath.row];
     
-    cell.textLabel.text = model.name;
+    cell.nameLabel.text = model.name;
+    cell.downloadLabel.text = model.download;
     
     // sdwebimage 异步设置图像
     NSURL *url = [NSURL URLWithString:model.icon];
-    [cell.imageView sd_setImageWithURL:url];
+    [cell.iconView sd_setImageWithURL:url];
 
     
     return cell;
